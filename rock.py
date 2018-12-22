@@ -10,7 +10,7 @@ randomChoice = random.randint(0,2)
 if randomChoice == 0:
     computerChoice = 'rock'
 elif randomChoice == 1:
-    compterChoice = 'paper'
+    computerChoice = 'paper'
 else:
     computerChoice = 'scissor'
 
@@ -27,3 +27,15 @@ userChoice = input('rock, paper or scissor?')
 
 if computerChoice == userChoice:
     winner = 'Tie'
+elif computerChoice == 'paper' and userChoice == 'rock':
+    winner = 'Computer'
+elif computerChoice == 'rock' and userChoice == 'scissors':
+    winner = 'Computer'
+elif computerChoice == 'scissors' and userChoice == 'paper':
+    winner = 'Computer'
+else:
+    winner = 'User'
+
+print('The',
+    winner,
+    'wins!' )
