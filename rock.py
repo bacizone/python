@@ -1,12 +1,13 @@
+# import random package and initialize a winner variable with an empty string
+
 import random
 
 winner = ''
 
+# random method select a random number between 0 and 2 and assigns it to the randomChoice variable
 randomChoice = random.randint(0,2)
-# print(
-#    'The computer chooses',
-#    randomChoice)
 
+# randomChoice values assign string to computerChoice
 if randomChoice == 0:
     computerChoice = 'rock'
 elif randomChoice == 1:
@@ -14,19 +15,14 @@ elif randomChoice == 1:
 else:
     computerChoice = 'scissor'
 
-# print('The computer chooses',
-#      computerChoice)
-
+# user inputs his string of choice
 userChoice = input('rock, paper or scissor?')
 
-#print (
-#    'You choose',
-#   userChoice,
-#    'and the computer chose',
-#    computerChoice)
-
+# evaluates the case when computer and the user choose the same
 if computerChoice == userChoice:
     winner = 'Tie'
+
+# evaluates the cases where computer wins, otherwise user wins.
 elif computerChoice == 'paper' and userChoice == 'rock':
     winner = 'Computer'
 elif computerChoice == 'rock' and userChoice == 'scissors':
@@ -36,6 +32,9 @@ elif computerChoice == 'scissors' and userChoice == 'paper':
 else:
     winner = 'User'
 
-print('The',
-    winner,
-    'wins!' )
+# prints the message in case of Tie
+if winner == 'Tie':
+    print('We both chose', computerChoice, + ', play again!')
+# print who won the game
+else:
+    print(winner, 'won, I chose', computerChoice, '.')
