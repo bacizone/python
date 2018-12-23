@@ -15,8 +15,11 @@ elif randomChoice == 1:
 else:
     computerChoice = 'scissor'
 
-# user inputs his string of choice
-userChoice = input('rock, paper or scissor?')
+userChoice = '' # set variable to empty string
+while (userChoice != 'rock' and #why and and not or??? 
+      userChoice != 'paper' and
+      userChoice != 'scissors'):
+    userChoice = input('rock, paper or scissors? ')
 
 # evaluates the case when computer and the user choose the same
 if computerChoice == userChoice:
@@ -34,7 +37,7 @@ else:
 
 # prints the message in case of Tie
 if winner == 'Tie':
-    print('We both chose', computerChoice, + ', play again!')
+    print('We both chose', computerChoice, 'play again!')
 # print who won the game
 else:
     print(winner, 'won, I chose', computerChoice, '.')
