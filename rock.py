@@ -1,8 +1,7 @@
 # import random package and initialize a winner variable with an empty string
-
 import random
 
-winner = ''
+winner = '' #initialize the variable with an empty string
 
 # random method select a random number between 0 and 2 and assigns it to the randomChoice variable
 randomChoice = random.randint(0,2)
