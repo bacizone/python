@@ -17,6 +17,10 @@ has_coconut = [True,
 #      print(smoothies[i],'contains coconut')
 #    i = i + 1
 
+# length = len(smoothies)
+# for i in range(length):
+#     print('Smoothie #', i, smoothies[i])
+
 for smoothie in smoothies:
     output = 'We serve ' + smoothie
     print(output)
