@@ -5,7 +5,7 @@ def make_sundae(ice_cream='vanilla', sauce='chocolate', nuts=True, banana=True, 
     if banana:
         recipe = recipe + 'a brownie and '
     if not whipped_cream:
-        recipe = recipe + 'no'
+        recipe = recipe + 'no '
     recipe = recipe + 'whipped cream on top.'
     return recipe
 
