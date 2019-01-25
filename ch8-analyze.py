@@ -4,8 +4,10 @@ def count_sentences(text):
     count = 0
 
     for char in text:
-        if char == '.' or
-        char == ';'
+        if char == '.' or char == ';' or char == '?' or char == '!':
+                count = count + 1
+        return count
+
 
 def compute_readability(text):
     total_words = 0
