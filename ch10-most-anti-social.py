@@ -1,0 +1,17 @@
+users = {} 
+
+users['Kim'] = {'email' : 'kim@ oreilly.com', 'gender': 'f', 'age': 27, 'friends': ['John', 'Josh']} 
+
+users['John'] = {'email' : 'john@ abc.com',' gender': 'm', 'age': 24, 'friends': ['Kim', 'Josh']}
+
+max = 1000
+for name in users:
+    user = users[name]
+    friends = user['friends']
+    if len(friends) < max:
+        most_anti_social = name
+        max = len(name)
+
+print('The most_anti_social user is', most_anti_social)
+
+
