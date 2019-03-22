@@ -1,8 +1,10 @@
 users = {} 
 
-users['Kim'] = {'email' : 'kim@ oreilly.com', 'gender': 'f', 'age': 27, 'friends': ['John', 'Josh']} 
+users['Josh'] = {'email' : 'josh@wickedlysmart.com', 'gender' : 'm', 'age' : 32, 'friends' : ['Kim', 'Samantha', 'Calvin']}
 
-users['John'] = {'email' : 'john@ abc.com',' gender': 'm', 'age': 24, 'friends': ['Kim', 'Josh']}
+users['Kim'] = {'email' : 'kim@oreilly.com', 'gender': 'f', 'age': 27, 'friends': ['John', 'Josh']} 
+
+users['John'] = {'email' : 'john@abc.com',' gender': 'm', 'age': 24, 'friends': ['Kim', 'Josh', 'Peter']}
 
 max = 1000
 for name in users:
@@ -10,7 +12,7 @@ for name in users:
     friends = user['friends']
     if len(friends) < max:
         most_anti_social = name
-        max = len(name)
+        max = len(friends)
 
 print('The most_anti_social user is', most_anti_social)
 

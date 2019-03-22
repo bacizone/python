@@ -6,5 +6,5 @@ def fibonacchi(n):
     else:
         return fibonacchi(n-1) + fibonacchi(n-2)
 
-result = fibonacchi(25)
+result = fibonacchi(35)
 print(result)
